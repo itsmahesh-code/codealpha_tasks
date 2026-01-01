@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+
+<div class="filters">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('nature')">Nature</button>
+  <button onclick="filterImages('city')">City</button>
+  <button onclick="filterImages('cars')">Cars</button>
+</div>
+
+<div class="gallery">
+  <img src="https://picsum.photos/id/1015/400/300" class="nature" onclick="openLightbox(0)">
+  <img src="https://picsum.photos/id/1011/400/300" class="nature" onclick="openLightbox(1)">
+  <img src="https://i.natgeofe.com/n/838dbb82-a2b5-4675-a7c6-ff80b0a1f651/future-cities-shanghai-yanan-expressway.jpg" class="city" onclick="openLightbox(2)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5CzWjTU1isg_m4Bkw1wK7MLld-IhCEEYn2A&s" class="city" onclick="openLightbox(3)">
+  <img src="https://www.spinny.com/blog/wp-content/uploads/2024/09/videoframe_0.webp" class="cars" onclick="openLightbox(4)">
+  <img src="https://www.autoshippers.co.uk/blog/wp-content/uploads/bugatti-centodieci.jpg" class="cars" onclick="openLightbox(5)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvk_LQzCT0UrbKN-7CBWwpalwTe9BZpqR6lg&s" class="cars" onclick="openLightbox(6)">
+  <img src="https://onetreeplanted.org/cdn/shop/articles/nature_facts_1788x.jpg?v=1761073103" class="nature" onclick="openLightbox(7)">
+
+</div>
+
+<div class="lightbox" id="lightbox">
+  <img id="lightboxImg">
+  <div class="controls">
+    <button onclick="prevImg()">Prev</button>
+    <button onclick="nextImg()">Next</button>
+    <button onclick="closeLightbox()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
